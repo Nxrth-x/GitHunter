@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#App {
+  width: 100vw;
+}
+
+#App header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #e63946;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+#App img {
+  max-width: 256px;
+}
+
+.main-page {
+  text-align: center;
+}
+
+.main-page img {
+  margin-top: 20px;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.main-page img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.main-page h1 {
+  color: #333;
+  margin: 20px;
+}
+
+.main-page h1 span {
+  color: #e63946;
+}
+
+.main-page input {
+  width: 80%;
+  background: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  padding: 5px 0;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 20px;
+  color: #777;
+}
+
+.main-page input:active,
+.main-page input:focus {
+  border-color: #e63946;
+}
+
+.main-page button {
+  margin: 20px;
+  padding: 5px 0;
+  width: 80%;
+  font-weight: bold;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.user-page {
+  text-align: center;
+  color: #777;
+  margin: 20px;
+}
+
+.user-page > * {
+  margin: 10px;
+}
+
+.user-page img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+}
+
+.user-page p {
+  margin: 20px;
+}
+
+.user-page h1 {
+  color: #333;
+}
+
+.user-page h2 {
+  color: #e63946;
+}
+
+.user-page .followers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.user-page .followers p {
+  margin: 0;
+}
+
+.user-page button {
+  margin: 20px;
+  padding: 5px 0;
+  width: 80%;
+  font-weight: bold;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.repos-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.repos-page h1 {
+  color: #333;
+}
+
+.repos-page .card {
+  text-align: center;
+  width: 100%;
+  min-width: 256px;
+  max-width: 300px;
+  padding: 10px 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.repos-page .card .card-text {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.repos-page .card .card-text h2 {
+  color: #333333;
+}
+
+.repos-page .card a {
+  padding: 5px 10px;
+  width: 90%;
+  background: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */

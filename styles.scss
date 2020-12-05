@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+$primary: #e63946;
+$heading: #333;
+$text: #777;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#App {
+  width: 100vw;
+
+  header {
+    position: sticky;
+    top: 0;
+    background: $primary;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+  }
+
+  img {
+    max-width: 256px;
+  }
+}
+
+.main-page {
+  text-align: center;
+
+  img {
+    margin-top: 20px;
+    transition: all ease-in-out 250ms;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  h1 {
+    color: $heading;
+    span {
+      color: $primary;
+    }
+    margin: 20px;
+  }
+
+  input {
+    width: 80%;
+    background: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    padding: 5px 0;
+    text-align: center;
+    outline: none;
+    transition: all ease-in-out 250ms;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 20px;
+    color: $text;
+
+    &:active,
+    &:focus {
+      border-color: $primary;
+    }
+  }
+
+  button {
+    margin: 20px;
+    padding: 5px 0;
+    width: 80%;
+    font-weight: bold;
+    background: $primary;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    border-radius: 10px;
+    outline: none;
+  }
+}
+
+.user-page {
+  text-align: center;
+  color: $text;
+  margin: 20px;
+
+  & > * {
+    margin: 10px;
+  }
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    margin: 20px;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  h2 {
+    color: $primary;
+  }
+
+  .followers {
+    display: flex;
+    justify-content: space-around;
+    p {
+      margin: 0;
+    }
+  }
+
+  button {
+    margin: 20px;
+    padding: 5px 0;
+    width: 80%;
+    font-weight: bold;
+    background: $primary;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    border-radius: 10px;
+    outline: none;
+  }
+}
+
+.repos-page {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: #333;
+  }
+
+  .card {
+    text-align: center;
+    width: 100%;
+    min-width: 256px;
+    max-width: 300px;
+    padding: 10px 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px;
+
+    .card-text {
+      margin-bottom: 10px;
+      color: $text;
+
+      h2 {
+        color: #333333;
+      }
+    }
+
+    a {
+      padding: 5px 10px;
+      width: 90%;
+      background: $primary;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      outline: none;
+    }
+  }
+}
